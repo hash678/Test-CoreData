@@ -12,7 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        
+//        let person = Person(context: PersistenceHelper.shared.viewContext)
+//        
+//        guard let pets = person.pets else{return}
+//        for pet in pets{
+//            pet.name
+//        }
+    //    (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+        
     }
 
 

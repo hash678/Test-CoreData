@@ -15,6 +15,13 @@
 		1953FBF724E69CB9003B34BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953FBF624E69CB9003B34BD /* Assets.xcassets */; };
 		1953FBFA24E69CB9003B34BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953FBF824E69CB9003B34BD /* LaunchScreen.storyboard */; };
 		1953FC0524E69CB9003B34BD /* Test_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953FC0424E69CB9003B34BD /* Test_CoreDataTests.swift */; };
+		1953FC1324E69E27003B34BD /* Animal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953FC0F24E69E27003B34BD /* Animal+CoreDataClass.swift */; };
+		1953FC1424E69E27003B34BD /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953FC1024E69E27003B34BD /* Animal+CoreDataProperties.swift */; };
+		1953FC1524E69E27003B34BD /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953FC1124E69E27003B34BD /* Person+CoreDataClass.swift */; };
+		1953FC1624E69E27003B34BD /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953FC1224E69E27003B34BD /* Person+CoreDataProperties.swift */; };
+		19B141AF24E69ED100017D75 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B141AE24E69ED100017D75 /* PersistenceHelper.swift */; };
+		19B141B124E69FDE00017D75 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B141B024E69FDE00017D75 /* NetworkingService.swift */; };
+		19B141B324E69FFB00017D75 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B141B224E69FFB00017D75 /* JsonHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		1953FC0024E69CB9003B34BD /* Test-CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-CoreDataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953FC0424E69CB9003B34BD /* Test_CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CoreDataTests.swift; sourceTree = "<group>"; };
 		1953FC0624E69CB9003B34BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1953FC0F24E69E27003B34BD /* Animal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Animal+CoreDataClass.swift"; path = "Test-CoreData/Animal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1953FC1024E69E27003B34BD /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Animal+CoreDataProperties.swift"; path = "Test-CoreData/Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1953FC1124E69E27003B34BD /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataClass.swift"; path = "Test-CoreData/Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1953FC1224E69E27003B34BD /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "Test-CoreData/Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		19B141AE24E69ED100017D75 /* PersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		19B141B024E69FDE00017D75 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		19B141B224E69FFB00017D75 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,10 @@
 		1953FBDE24E69CB3003B34BD = {
 			isa = PBXGroup;
 			children = (
+				1953FC0F24E69E27003B34BD /* Animal+CoreDataClass.swift */,
+				1953FC1024E69E27003B34BD /* Animal+CoreDataProperties.swift */,
+				1953FC1124E69E27003B34BD /* Person+CoreDataClass.swift */,
+				1953FC1224E69E27003B34BD /* Person+CoreDataProperties.swift */,
 				1953FBE924E69CB3003B34BD /* Test-CoreData */,
 				1953FC0324E69CB9003B34BD /* Test-CoreDataTests */,
 				1953FBE824E69CB3003B34BD /* Products */,
@@ -89,6 +107,9 @@
 				1953FBF824E69CB9003B34BD /* LaunchScreen.storyboard */,
 				1953FBFB24E69CB9003B34BD /* Info.plist */,
 				1953FBF324E69CB3003B34BD /* Test_CoreData.xcdatamodeld */,
+				19B141AE24E69ED100017D75 /* PersistenceHelper.swift */,
+				19B141B024E69FDE00017D75 /* NetworkingService.swift */,
+				19B141B224E69FFB00017D75 /* JsonHelper.swift */,
 			);
 			path = "Test-CoreData";
 			sourceTree = "<group>";
@@ -204,8 +225,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1953FBF524E69CB3003B34BD /* Test_CoreData.xcdatamodeld in Sources */,
+				1953FC1524E69E27003B34BD /* Person+CoreDataClass.swift in Sources */,
 				1953FBEF24E69CB3003B34BD /* ViewController.swift in Sources */,
+				19B141B324E69FFB00017D75 /* JsonHelper.swift in Sources */,
+				1953FC1324E69E27003B34BD /* Animal+CoreDataClass.swift in Sources */,
+				1953FC1624E69E27003B34BD /* Person+CoreDataProperties.swift in Sources */,
+				19B141B124E69FDE00017D75 /* NetworkingService.swift in Sources */,
+				1953FC1424E69E27003B34BD /* Animal+CoreDataProperties.swift in Sources */,
 				1953FBEB24E69CB3003B34BD /* AppDelegate.swift in Sources */,
+				19B141AF24E69ED100017D75 /* PersistenceHelper.swift in Sources */,
 				1953FBED24E69CB3003B34BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
